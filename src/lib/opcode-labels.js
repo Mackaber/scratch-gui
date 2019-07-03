@@ -112,6 +112,11 @@ const messages = defineMessages({
         defaultMessage: 'timer',
         description: 'Label for the timer monitor when shown on the stage',
         id: 'gui.opcodeLabels.timer'
+    },
+    wolfram: {
+        defaultMessage: 'wolfram',
+        description: 'Wolfram thingy',
+        id: 'gui.opcodeLabels.wolfram'
     }
 });
 
@@ -154,7 +159,9 @@ class OpcodeLabels {
             sensing_loudness: {category: 'sensing'},
             sensing_username: {category: 'sensing'},
             sensing_current: {category: 'sensing'},
-            sensing_timer: {category: 'sensing'}
+            sensing_timer: {category: 'sensing'},
+
+            wolfram: {category: 'wolfram'}
         };
 
         // Initialize opcodeMap with default strings

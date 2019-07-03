@@ -35,7 +35,7 @@ const StageComponent = props => {
     const stageDimensions = getStageDimensions(stageSize, isFullScreen);
 
     return (
-        <div>
+        <div id="stage">
             <Box
                 className={classNames({
                     [styles.stageWrapper]: !isFullScreen,
