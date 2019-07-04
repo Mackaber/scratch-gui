@@ -710,19 +710,6 @@ const myBlocks = function () {
     `;
 };
 
-
-const wlImages = function () {
-    return `
-    <category
-        name="Image Manipulation" 
-        id="wlImages"
-        colour="#FF6680"
-        secondaryColour="#FF4D6A">
-        <block type="current_image" />
-    </category>
-    `;
-};
-
 const xmlOpen = '<xml style="display: none">';
 const xmlClose = '</xml>';
 
@@ -765,11 +752,9 @@ const makeToolboxXML = function (isStage, targetId, categoriesXML = [],
     const operatorsXML = moveCategory('operators') || operators(isStage, targetId);
     const variablesXML = moveCategory('data') || variables(isStage, targetId);
     const myBlocksXML = moveCategory('procedures') || myBlocks(isStage, targetId);
-    const wlImageXML = moveCategory('Image Manipulation') || wlImages(isStage, targetId);
 
     const everything = [
         xmlOpen,
-        wlImageXML,
         //motionXML, gap,
         //looksXML, gap,
         //soundXML, gap,

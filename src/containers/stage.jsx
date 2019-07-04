@@ -407,15 +407,8 @@ class Stage extends React.Component {
             ...props
         } = this.props;
         return (
-            <StageComponent
-                canvas={this.canvas}
-                colorInfo={this.state.colorInfo}
-                dragRef={this.setDragCanvas}
-                question={this.state.question}
-                onDoubleClick={this.handleDoubleClick}
-                onQuestionAnswered={this.handleQuestionAnswered}
-                {...props}
-            />
+            <div id="stage" style={{width: "380px", height: "630px", overflow: "scroll"}}>
+            </div>
         );
     }
 }
