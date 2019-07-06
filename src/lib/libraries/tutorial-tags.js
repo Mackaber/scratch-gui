@@ -1,8 +1,8 @@
 import messages from './tag-messages.js';
 export default [
-    {tag: 'animation', intlLabel: messages.animation},
-    {tag: 'art', intlLabel: messages.art},
-    {tag: 'music', intlLabel: messages.music},
-    {tag: 'games', intlLabel: messages.games},
-    {tag: 'stories', intlLabel: messages.stories}
+    {tag: 'getting_started', intlLabel: messages.getting_started},
+    {tag: 'math', intlLabel: messages.math},
+    {tag: 'challenges', intlLabel: messages.challenges},
+    {tag: 'image_manipulation', intlLabel: messages.image_manipulation},
+    {tag: 'realworld_data', intlLabel: messages.realworld_data}
 ];

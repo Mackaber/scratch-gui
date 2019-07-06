@@ -710,6 +710,18 @@ const myBlocks = function () {
     `;
 };
 
+const coreBlocks = function () {
+    return `
+    <category
+        name="Core Blocks"
+        id="myBlocks"
+        colour="#FFFFFF"
+        secondaryColour="#FFFFFF"
+        custom="PROCEDURE">
+    </category>
+    `;
+};
+
 const xmlOpen = '<xml style="display: none">';
 const xmlClose = '</xml>';
 
@@ -759,9 +771,9 @@ const makeToolboxXML = function (isStage, targetId, categoriesXML = [],
         //looksXML, gap,
         //soundXML, gap,
         eventsXML, gap,
-        controlXML, gap,
+        //controlXML, gap,
         //sensingXML, gap,
-        operatorsXML, gap,
+        //operatorsXML, gap,
         variablesXML, gap,
         myBlocksXML, gap,
     ];
