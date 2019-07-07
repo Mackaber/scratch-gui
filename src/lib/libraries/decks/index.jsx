@@ -24,7 +24,7 @@ export default {
             title: (
                 <FormattedMessage
                     defaultMessage="Add an Evaluate block"
-                    id="gui.howtos.intro-getting_started.step_1"
+                    id="gui.howtos.getting_started.step_1"
                 />
             ),
             image: 'getting_started_step_1'
@@ -32,7 +32,7 @@ export default {
             title: (
                 <FormattedMessage
                     defaultMessage="Add a Current Image Block"
-                    id="gui.howtos.intro-getting_started.step_2"
+                    id="gui.howtos.getting_started.step_2"
                 />
             ),
             image: 'getting_started_step_2'
@@ -40,7 +40,7 @@ export default {
             title: (
                 <FormattedMessage
                     defaultMessage="Add a Negate Color Block"
-                    id="gui.howtos.intro-getting_started.step_2"
+                    id="gui.howtos.getting_started.step_3"
                 />
             ),
             image: 'getting_started_step_3'
