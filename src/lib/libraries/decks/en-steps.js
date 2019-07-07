@@ -170,7 +170,21 @@ import moveArrowKeysUpDown from './steps/move-arrow-keys-up-down.en.png';
 import glideAroundBackAndForth from './steps/glide-around-back-and-forth.en.png';
 import glideAroundPoint from './steps/glide-around-point.en.png';
 
+//-------WL
+
+// Charmander plot
+import charmander_plot_step_1 from './wl_steps/charmander_plot_step_1.gif';
+import charmander_plot_step_2 from './wl_steps/charmander_plot_step_2.gif';
+import charmander_plot_step_3 from './wl_steps/charmander_plot_step_3.gif';
+import charmander_plot_step_4 from './wl_steps/charmander_plot_step_4.gif';
+
 const enImages = {
+
+    charmander_plot_step_1: charmander_plot_step_1,
+    charmander_plot_step_2: charmander_plot_step_2,
+    charmander_plot_step_3: charmander_plot_step_3,
+    charmander_plot_step_4: charmander_plot_step_4,
+
     // Intro
     introMove: introMove,
     introSayHello: introSayHello,
@@ -276,7 +290,7 @@ const enImages = {
     flyAddScenery: flyAddScenery,
     flyMoveScenery: flyMoveScenery,
     flySwitchLooks: flySwitchLooks,
-    
+
     // Pong
     pongAddBackdrop: pongAddBackdrop,
     pongAddBallSprite: pongAddBallSprite,
@@ -291,7 +305,7 @@ const enImages = {
     pongResetScore: pongResetScore,
     pongAddLineSprite: pongAddLineSprite,
     pongGameOver: pongGameOver,
-    
+
     // Imagine If
     imagineTypeWhatYouWant: imagineTypeWhatYouWant,
     imagineClickGreenFlag: imagineClickGreenFlag,
@@ -308,26 +322,26 @@ const enImages = {
     imagineSwitchBackdrops: imagineSwitchBackdrops,
     imagineRecordASound: imagineRecordASound,
     imagineChooseSound: imagineChooseSound,
-    
+
     // Add a Backdrop
     addBackdrop: addBackdrop,
-    
+
     // Add Effects
     addEffects: addEffects,
-    
+
     // Hide and Show
     hideAndShow: hideAndShow,
-    
+
     // Switch Costumes
     switchCostumes: switchCostumes,
-    
+
     // Change Size
     changeSize: changeSize,
-    
+
     // Spin
     spinTurn: spinTurn,
     spinPointInDirection: spinPointInDirection,
-    
+
     // Record a Sound
     recordASoundSoundsTab: recordASoundSoundsTab,
     recordASoundClickRecord: recordASoundClickRecord,
@@ -342,7 +356,7 @@ const enImages = {
     // Glide Around
     glideAroundBackAndForth: glideAroundBackAndForth,
     glideAroundPoint: glideAroundPoint
-    
+
 };
 
 
