@@ -9,27 +9,32 @@ import {setFullScreen} from '../reducers/mode';
 import {connect} from 'react-redux';
 
 import StageHeaderComponent from '../components/stage-header/stage-header.jsx';
+import {selectLocale} from "../reducers/locales";
 
 // eslint-disable-next-line react/prefer-stateless-function
 class StageHeader extends React.Component {
-    constructor (props) {
+    constructor(props) {
         super(props);
         bindAll(this, [
             'handleKeyPress'
         ]);
     }
-    componentDidMount () {
+
+    componentDidMount() {
         document.addEventListener('keydown', this.handleKeyPress);
     }
-    componentWillUnmount () {
+
+    componentWillUnmount() {
         document.removeEventListener('keydown', this.handleKeyPress);
     }
-    handleKeyPress (event) {
+
+    handleKeyPress(event) {
         if (event.key === 'Escape' && this.props.isFullScreen) {
             this.props.onSetStageUnFull(false);
         }
     }
-    render () {
+
+    render() {
         const {
             ...props
         } = this.props;
@@ -59,8 +64,12 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    onSetStageLarge: () => dispatch(setStageSize(STAGE_SIZE_MODES.large)),
-    onSetStageSmall: () => dispatch(setStageSize(STAGE_SIZE_MODES.small)),
+    onSetStageLarge: () => {
+        dispatch(selectLocale('en'));
+    },
+    onSetStageSmall: () => {
+        dispatch(selectLocale('de'));
+    },
     onSetStageFull: () => dispatch(setFullScreen(true)),
     onSetStageUnFull: () => dispatch(setFullScreen(false))
 });
