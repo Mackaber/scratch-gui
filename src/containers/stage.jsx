@@ -407,7 +407,7 @@ class Stage extends React.Component {
             ...props
         } = this.props;
         return (
-            <div id="stage" style={{width: "380px", "max-height": "87vh", "overflow-y": "scroll"}}>
+            <div id="stage" style={{width: "380px", "max-height": "87vh", "overflowY": "scroll"}}>
             </div>
         );
     }
